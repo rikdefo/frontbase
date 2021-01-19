@@ -9,6 +9,10 @@ h1 {
     font-size: 2.5em;
 }
 
+.active {
+    color: green;
+}
+
 main {
     background-color: rgb(214, 214, 214);
 }
@@ -152,7 +156,7 @@ nav a:hover {
     font-size: 36px;
 }
 
-.way p {
+.way a {
     opacity: 0;
     display: inline-flex;
     width: 100%;
@@ -165,7 +169,7 @@ nav a:hover {
     bottom: 0;
 }
 
-.way p:hover {
+.way a:hover {
     opacity: 1;
     bottom: 50px;
 }
@@ -177,6 +181,38 @@ nav a:hover {
 .figma:hover,
 .security-cs:hover {
     background-size: 110%;
+}
+
+/*page from about*/
+.hello-banner {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello-banner img {
+    width: 50vw;
+}
+
+.info {
+    width: 50vw;
+    margin: 40px auto;
+    display: flex;
+}
+
+.info img {
+    width: 260px;
+    height: 345px;
+    min-height: 345px;
+    -webkit-box-shadow: 10px 10px 0px -4px #0305FF;
+    box-shadow: 10px 10px 0px -4px #0305FF;
+    border: 2px solid black;
+    margin-right: 40px;
+}
+
+.info h1 {
+    margin-bottom: 20px;
 }
 
 /*footer*/
