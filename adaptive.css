@@ -1,0 +1,15 @@
+@media screen and (max-width: 512px) {
+  .help-links {
+    flex-flow: column;
+    height: 100%;
+    min-width: 300px;
+  }
+
+  .way {
+    height: 20vw;
+  }
+
+  .tiles {
+    width: 80vw;
+  }
+}
