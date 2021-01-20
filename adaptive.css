@@ -12,4 +12,15 @@
   .tiles {
     width: 80vw;
   }
+
+  .info {
+    width: 80vw;
+    flex-flow: column;
+  }
+
+  .info img {
+    width: 200px;
+    height: 245px;
+    min-height: 0;
+  }
 }
