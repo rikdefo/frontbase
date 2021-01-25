@@ -215,6 +215,28 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.sub-categories {
+    margin: 20px;
+}
+
+.sub-categories a {
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+.cat-information {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.content-area {
+    width: 50vw;
+    font-size: 1.4rem;
+}
+
 /*footer*/
 footer {
     height: 200px;
@@ -224,4 +246,16 @@ footer {
     background-color: rgb(65, 65, 65);
     font-size: 22px;
     color: white;
+}
+
+/* SPAN */
+.code-block {
+    display: inline-block;
+    background-color: rgb(209, 229, 255);
+    border-radius: 6px;
+    border-style: dashed;
+    border-color: #d473fb;
+    padding: 14px;
+    margin: 20px;
+    font-size: 1.2rem;
 }
