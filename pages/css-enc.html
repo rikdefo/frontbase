@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | Справочник | Frontbase</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../adaptive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="../index.html">Главная</a>
+        <a href="https://hwschool.online/" target="_blank">Учиться</a>
+        <a href="about.html">Привет!</a>
+      </nav>
+      <div class="way-title hello-banner">
+        <h1>CSS. Главная. Описание языка</h1>
+      </div>
+      <div class="sub-categories">
+        <a href="">Свойства</a>
+        <a href="">Цвета</a>
+        <a href="">Псевдоклассы</a>
+        <a href="">Мобильный телефон</a>
+      </div>
+      <div class="cat-information">
+        <h1>Общая информация</h1>
+        <span class="code-block"> То, что важно знать </span>
+        <div class="content-area">
+          <h2 class="h-two-title">О языке</h2>
+          <p>
+            <b>CSS (Cascading Stylesheets, каскадные таблицы стилей)</b> - это
+            код, который используется для стилизации своего веб-сайта, это тот
+            язык, который показывает внешность сайта, как красиво он выглядит.
+            Например, хотите ли вы, чтобы текст был черным или красным? Где
+            должно быть нарисовано содержимое на экране? Какие фоновые
+            изображения и цвета должны быть использованы, чтобы украсить ваш
+            веб-сайт?
+          </p>
+          <br />
+          <span class="code-block">
+            /* Пример CSS кода для оформления этого блока с кодом на страничке.
+            */<br /><br />
+            .code-block {<br />
+            <span class="tabs"></span>display: inline-block;<br />
+            <span class="tabs"></span>background-color: rgb(51, 51, 51);<br />
+            <span class="tabs"></span>color: #fff;<br />
+            <span class="tabs"></span>border-radius: 6px;<br />
+            <span class="tabs"></span>border-style: dashed;<br />
+            <span class="tabs"></span>border-color: #39ff2b;<br />
+            <span class="tabs"></span>padding: 14px;<br />
+            <span class="tabs"></span>margin: 20px 0 40px 0;<br />
+            <span class="tabs"></span>font-size: 1.2rem;<br />
+            <span class="tabs"></span>font-family: 'Source Code Pro',
+            monospace;<br />
+            }<br />
+          </span>
+          <hr />
+          <br />
+          <h2 class="h-two-title">Как писать CSS?</h2>
+          <p>
+            В HTML используются <b>теги</b>, <b>классы</b>,
+            <b>идентификаторы</b>. Когда их пишут в CSS, то называют
+            селекторами. Чтобы задать внешний вид тегу, необходимо написать его
+            название, после чего поставить <b>фигурные скобки { }</b> и в них
+            написать необходимые свойства. Сначала пишется название свойства,
+            после него ставится двоеточие и пишется значение этого свойства.
+            <b>Пример:</b> <span class="code-block-inline">padding: 20px;</span
+            ><br />
+            Чтобы обратиться к классу - перед его названием надо поставить
+            точку. Для идентификатора используем знак решетки <b>(#)</b>.
+          </p>
+          <span class="code-block">
+            /* Это у нас стили для тега. */<br /><br />
+            div { /*Селектор div*/<br />
+            <span class="tabs"></span>width: 300px; /*свойство: значение;*/<br />
+            <span class="tabs"></span>height: 10vw; /*свойство: значение;*/<br />
+            }
+            <br />
+            <br />
+            /* Это у нас стили для класса, не забываем вначале точку. */<br />
+            .tabs { /*Селектор класса .tabs*/<br />
+            <span class="tabs"></span>display: inline-block; /*свойство:
+            значение;*/<br />
+            <span class="tabs"></span>width: 26px; /*свойство: значение;*/<br />
+            }<br /><br />
+            /* Это у нас стили для идентификатора, ставим в начале решетку #.
+            */<br />
+            #warning { /*Селектор идентификатора #warning*/<br />
+            <span class="tabs"></span>color: red; /*свойство: значение;*/<br />
+            <span class="tabs"></span>position: fixed; /*свойство:
+            значение;*/<br />
+            }<br />
+          </span>
+          <br />
+          <h2 class="h-two-title">Не всегда работает!?</h2>
+          <p>
+            Иногда бывает, что пишем стиль, а он не работает. Такое часто
+            случается из-за того, что <b>CSS читает стили сверху вниз</b> и если
+            у нас одному элементу в разных местах заданы одинаковые свойства, но
+            с разными значениями - будет работать тот, который
+            <b>ниже по коду</b>.
+          </p>
+          <span class="code-block">
+            /* Работать будет тот, который ниже. */<br /><br />
+            p { /* Не будет работать. */<br />
+            <span class="tabs"></span>color: red;<br />
+            }<br /><br />
+
+            p { /* Будет работать. */<br />
+            <span class="tabs"></span>color: blue;<br />
+            }<br />
+          </span>
+          <br />
+          <p>
+            Другая причина может быть связана с <b>весом</b>. Так, обычный тег
+            весит <b>1кг</b>, класс весит <b>10кг</b>, идентификатор -
+            <b>100кг</b>. Если, к примеру, пишем красный цвет тегу
+            <span class="code-block-inline">&lt;p&gt;</span>, а где-то в коде
+            выше ему задан синий цвет через класс и тег, то CSS посмотрит, кто
+            из них тяжелее, тот и будет работать.
+          </p>
+          <span class="code-block">
+            /* Работать будет тот, который выше, его масса больше. */<br /><br />
+            .text p { /* Будет работать. Масса = 11 */<br />
+            <span class="tabs"></span>color: blue;<br />
+            }<br /><br />
+
+            p { /* Не будет работать. Масса = 1 */<br />
+            <span class="tabs"></span>color: red;<br />
+            }<br />
+          </span>
+          <br />
+          <h2 class="h-two-title">Названия файлов</h2>
+          <p>
+            В HTML главную (основную) страницу называют <b>index.html</b> ,
+            главный файл стилей в CSS - <b>style.css</b>
+          </p>
+        </div>
+      </div>
+      <footer>
+        For kids <br />
+        Created by Rik Defo. <br />
+        2021
+      </footer>
+      <a href="#top"><div class="top">/\</div></a>
+    </main>
+  </body>
+</html>

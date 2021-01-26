@@ -251,6 +251,10 @@ nav a:hover {
     font-size: 1.4rem;
 }
 
+.content-area a {
+    color: blue;
+}
+
 /*footer*/
 footer {
     height: 200px;

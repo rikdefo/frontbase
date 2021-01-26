@@ -30,4 +30,8 @@
     min-height: 0;
     margin-bottom: 20px;
   }
+
+  .content-area {
+    min-width: 360px;
+  }
 }
