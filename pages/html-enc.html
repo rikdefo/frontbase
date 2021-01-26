@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML | Справочник | Frontbase</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../adaptive.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,12 +24,12 @@
         <a href="../index.html">Главная</a>
         <a href="https://hwschool.online/" target="_blank">Учиться</a>
         <a href="../pages/about.html">Привет!</a>
-        <!-- <a href="pages/way.html">Ветки</a> -->
       </nav>
       <div class="way-title hello-banner">
         <h1>HTML. Главная. Описание языка</h1>
       </div>
       <div class="sub-categories">
+        <a href="html/tags.html">Теги</a>
         <a href="">Структура</a>
         <a href="">Текст</a>
         <a href="">Таблица</a>
@@ -35,31 +40,71 @@
         <h1>Общая информация</h1>
         <span class="code-block"> То, что важно знать </span>
         <div class="content-area">
+          <h2 class="h-two-title">О языке</h2>
           <p>
-            В HTML страничка называется документом. Браузер (программа для
-            пользования интернетом типа Google Chrome, Opera, Safari и т.д.)
-            читает странички сверху вниз и такое чтение называется потоком
-            документа.
+            <b>HTML (Hypertext Markup Language, HTML)</b> - это код, который мы
+            используем для создания <b>структуры</b> веб-странички. Страничка
+            называется <b>документом</b>. Браузер (программа для пользования
+            интернетом типа Google Chrome, Opera, Safari и т.д.) читает
+            странички сверху вниз и такое чтение называется
+            <b>потоком документа</b>.
           </p>
           <br />
+          <span class="code-block">
+            &lt;!DOCTYPE html&gt;<br />
+            &lt;html lang="en"&gt;<br />
+            &lt;head&gt;<br />
+            <span class="tabs"></span>&lt;meta charset="UTF-8" /&gt;<br />
+            <span class="tabs"></span>&lt;meta name="viewport"
+            content="width=device-width, initial-scale=1.0" /&gt;<br />
+            <span class="tabs"></span>&lt;title&gt;Название вкладки в
+            браузере&lt;/title&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br /><br />&lt;/body&gt; <br />&lt;/html&gt;
+          </span>
+          <hr />
+          <br />
+          <h2 class="h-two-title">Как пишутся теги (tag)</h2>
           <p>
-            В HTML теги пишутся в знаках больше/меньше &lt; &gt;. Теги бывают
-            без пары &lt; &gt; и парные &lt; &gt; &lt; / &gt;. Тегам без пары не
-            важно, что вокруг, они сами по себе (картинки, перенос строки).
-            Парным тегам важно знать, где заканчивается то, что в них лежит, они
-            пишутся со знаком слеш / (например заголовок &lt;h1&gt;Заголовок
-            парный тег&lt;/h1&gt;).
+            <b>Теги</b> - это строительные блоки для создания структуры
+            странички. Они помогают браузеру понять, чего мы от него хотим.
+            <b>Теги</b> пишутся в знаках меньше/больше
+            <span class="code-block-inline">&lt; &gt;</span>. Теги бывают
+            одинарные <span class="code-block-inline">&lt; &gt;</span> и парные
+            <span class="code-block-inline">&lt; &gt; &lt;/ &gt;</span>. Тегам
+            без пары <b>не важно</b>, что вокруг, они сами по себе (картинки,
+            перенос строки. Пример:
+            <span class="code-block-inline"
+              >&lt;img src=&quot;atribut-src.jpg&quot; alt=&quot;второй атрибут
+              alt&quot;&gt;</span
+            >). Парным тегам важно знать, <b>где заканчивается</b> то, что в них
+            лежит, они пишутся со знаком <b>слеш</b>
+            <span class="code-block-inline">/</span> (например заголовок
+            <span class="code-block-inline"
+              >&lt;h1&gt;Заголовок парный тег&lt;/h1&gt;</span
+            >).
           </p>
           <br />
+          <h2 class="h-two-title">Атрибуты тегов</h2>
           <p>
-            В HTML все атрибуты пишутся внутри скобок, рядом с самим тегом
-            (&lt;img src=&quot;atribut-src.jpg&quot; alt=&quot;второй атрибут
-            alt&quot;&gt;).
+            <b>Атрибуты</b> - это настройки тегов. Они помогают тегам работать
+            правильно или расширяют их возможности. Атрибуты бывают
+            <b>обязательные и не обязательные</b>
+            . Например в теге картинки обязательно указать путь к изображению
+            или ссылку на него, иначе мы не увидим результата. Все
+            <b>атрибуты</b> пишутся <span class="warning">внутри скобок</span>,
+            рядом с самим тегом
+            <span class="code-block-inline"
+              >&lt;img src=&quot;atribut-src.jpg&quot; alt=&quot;второй атрибут
+              alt&quot;&gt;</span
+            >. В примере атрибуты это
+            <span class="code-block-inline">src="" alt=""</span>
           </p>
           <br />
+          <h2 class="h-two-title">Названия файлов</h2>
           <p>
-            В HTML главную (основную) страницу называют index.html, главный файл
-            стилей в CSS - style.css
+            В HTML главную (основную) страницу называют <b>index.html</b> ,
+            главный файл стилей в CSS - <b>style.css</b>
           </p>
         </div>
       </div>
@@ -68,6 +113,7 @@
         Created by Rik Defo. <br />
         2021
       </footer>
+      <a href="#top"><div class="top">/\</div></a>
     </main>
   </body>
 </html>

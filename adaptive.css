@@ -1,3 +1,9 @@
+@media screen and (max-width: 712px) {
+  .content-area {
+    min-width: 460px;
+  }
+}
+
 @media screen and (max-width: 512px) {
   .help-links {
     flex-flow: column;

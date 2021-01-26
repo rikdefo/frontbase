@@ -9,8 +9,12 @@ h1 {
     font-size: 2.5em;
 }
 
-.active {
-    color: green;
+.h-two-title {
+    margin-bottom: 15px;
+}
+
+.h-two-top {
+    margin-top: 40px;
 }
 
 main {
@@ -216,12 +220,21 @@ nav a:hover {
 }
 
 .sub-categories {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 64px;
+    padding: 10px 0;
     margin: 20px;
 }
 
 .sub-categories a {
     margin-left: 20px;
     font-size: 1.1rem;
+    color: blue;
+}
+
+.sub-categories a:hover {
+    border-bottom: 2px solid rgb(255, 187, 0);
 }
 
 .cat-information {
@@ -234,6 +247,7 @@ nav a:hover {
 
 .content-area {
     width: 50vw;
+    min-width: 660px;
     font-size: 1.4rem;
 }
 
@@ -251,11 +265,61 @@ footer {
 /* SPAN */
 .code-block {
     display: inline-block;
-    background-color: rgb(209, 229, 255);
+    background-color: rgb(51, 51, 51);
+    color: #fff;
     border-radius: 6px;
     border-style: dashed;
-    border-color: #d473fb;
+    border-color: #39ff2b;
     padding: 14px;
-    margin: 20px;
+    margin: 20px 0 40px 0;
     font-size: 1.2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.code-block-inline {
+    display: inline-block;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    border-radius: 6px;
+    border: 1px dashed lightblue;
+    padding: 0 14px;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.tabs {
+    display: inline-block;
+    width: 26px;
+}
+
+hr {
+    width: 50%;
+    border-color: blue;
+}
+
+.warning {
+    color: red;
+}
+
+.active {
+    color: green;
+}
+
+.sub-categories .active {
+    color: green;
+}
+
+.top {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 68, 68);
+    border-radius: 20px;
+    position: fixed;
+    left: 60px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
