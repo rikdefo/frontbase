@@ -306,6 +306,15 @@ hr {
     color: red;
 }
 
+.attr {
+    color: rgb(255, 0, 0);
+}
+
+.line-space {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
 .active {
     color: green;
 }
