@@ -310,9 +310,8 @@ hr {
     color: rgb(255, 0, 0);
 }
 
-.line-space {
-    display: inline-block;
-    margin-bottom: 40px;
+.content-area p {
+    margin-bottom: 20px;
 }
 
 .active {
