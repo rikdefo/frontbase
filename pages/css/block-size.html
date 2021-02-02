@@ -22,11 +22,16 @@
     <main>
       <nav>
         <a href="../../index.html">Главная</a>
-        <a href="https://hwschool.online/" target="_blank">Учиться</a>
+        <a
+          href="https://hwschool.online/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Учиться</a
+        >
         <a href="../about.html">Привет!</a>
       </nav>
       <div class="way-title hello-banner">
-        <h1>Свойства в CSS</h1>
+        <h1>Размеры блоков в CSS</h1>
       </div>
       <div class="sub-categories">
         <a href="prop.html">&lt;&lt; Назад</a>
@@ -45,17 +50,15 @@
           <h2 class="h-two-title h-two-top">
             width (ширина)
             <a
-              href="http://developer.mozilla.org/ru/docs/Web/CSS/width"
+              href="https://developer.mozilla.org/ru/docs/Web/CSS/width"
               target="_blank"
               rel="noopener noreferrer"
               >MDN</a
             >
           </h2>
 
-          <p>
-            Свойство устанавливает ширину элемента.
-            <span class="warning">Не работает для текста.</span>
-          </p>
+          <p>Свойство устанавливает ширину элемента.</p>
+          <span id="min-width"></span>
           <span class="code-block">
             width: 100px; //ширина 100 пикселей <br />
             width: 50%; //ширина 50 процентов<br />
@@ -75,8 +78,8 @@
           <p>
             Свойство устанавливает минимальную ширину элемента. Меньше, чем
             ширина в этом свойстве, блок быть не может.
-            <span class="warning">Не работает для текста.</span>
           </p>
+          <span id="max-width"></span>
           <span class="code-block">
             min-width: 100px; //минимальная ширина 100 пикселей <br />
             min-width: 50%; //минимальная ширина 50 процентов<br />
@@ -97,8 +100,8 @@
           <p>
             Свойство устанавливает максимальную ширину элемента. Больше, чем
             ширина в этом свойстве, блок быть не может.
-            <span class="warning">Не работает для текста.</span>
           </p>
+          <span id="height"></span>
           <span class="code-block">
             max-width: 100px; //максимальная ширина 100 пикселей <br />
             max-width: 50%; //максимальная ширина 50 процентов<br />
@@ -115,10 +118,8 @@
               >MDN</a
             >
           </h2>
-          <p>
-            Свойство устанавливает высоту элемента.
-            <span class="warning">Не работает для текста.</span>
-          </p>
+          <p>Свойство устанавливает высоту элемента.</p>
+          <span id="min-height"></span>
           <span class="code-block">
             height: 120px; //высота 120 пикселей <br />
             height: 40%; //высота 40 процентов<br />
@@ -138,8 +139,8 @@
           <p>
             Свойство устанавливает минимальную высоту элемента. Меньше, чем
             высота в этом свойстве, блок быть не может.
-            <span class="warning">Не работает для текста.</span>
           </p>
+          <span id="max-height"></span>
           <span class="code-block">
             min-height: 100px; //минимальная высота 100 пикселей <br />
             min-height: 50%; //минимальная высота 50 процентов<br />
@@ -160,7 +161,6 @@
           <p>
             Свойство устанавливает максимальную высоту элемента. Больше, чем
             высота в этом свойстве, блок быть не может.
-            <span class="warning">Не работает для текста.</span>
           </p>
           <span class="code-block">
             max-height: 100px; //максимальная высота 100 пикселей <br />
