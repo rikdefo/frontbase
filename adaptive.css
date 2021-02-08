@@ -1,3 +1,14 @@
+@media screen and (max-width: 1070px) {
+  .way {
+    height: 30vw;
+    width: 30%;
+  }
+
+  .tiles {
+    width: 90vw;
+  }
+}
+
 @media screen and (max-width: 712px) {
   .content-area {
     min-width: 460px;
@@ -11,13 +22,14 @@
     min-width: 300px;
   }
 
+  /* 
   .way {
     height: 20vw;
   }
 
   .tiles {
     width: 80vw;
-  }
+  } */
 
   .info {
     width: 80vw;

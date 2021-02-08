@@ -117,7 +117,8 @@ nav a:hover {
 }
 
 .tiles {
-    width: 60vw;
+    width: 80vw;
+    /*60*/
     /* background-color: #fff; */
     display: flex;
     justify-content: center;
@@ -150,8 +151,10 @@ nav a:hover {
 }
 
 .way {
-    width: 25%;
-    height: 15vw;
+    width: 30%;
+    /*25%*/
+    height: 30vw;
+    /*15vw*/
     background-size: 90%;
     background-position: center;
     transition: .2s;
