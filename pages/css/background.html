@@ -46,53 +46,367 @@
             >Для поиска на странице нажмите CTRL + F (CMD + F на Mac,
             Apple)</span
           >
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background (фон)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
 
-          <h2 class="h-two-title h-two-top">
-            background (фон)
-            <a
-              href="https://developer.mozilla.org/ru/docs/Web/CSS/background"
-              target="_blank"
-              rel="noopener noreferrer"
-              >MDN</a
+            <p>
+              Свойство помогает в одной строчке написать сразу все нужные нам
+              значения фона (цвет, картинка, размер, повторение и другие).
+            </p>
+            <p>
+              Последовательно можно написать следующие значения других свойств
+              фонов: <a href="">background-clip</a>,
+              <a href="">background-color</a>, <a href="">background-image</a>,
+              <a href="">background-origin</a>,
+              <a href="">background-position</a>,
+              <a href="">background-repeat</a>, <a href="">background-size</a>,
+              <a href="">background-attachment</a>.
+            </p>
+            <p>
+              <span class="warning">background-size</span> должно быть указано
+              после <b>position</b>, разделенного символом
+              <span class="code-block-inline">/</span>.
+            </p>
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background"
+              src="https://codepen.io/rikdefo/embed/oNYgMQx?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
             >
-          </h2>
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/oNYgMQx"
+                >prop-background</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-color (цвет фона)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background-color"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
 
-          <p>
-            Свойство помогает в одной строчке написать сразу все нужные нам
-            значения фона (цвет, картинка, размер, повторение и другие).
-          </p>
-          <p>
-            Последовательно можно написать следующие значения других свойств
-            фонов: <a href="">background-clip</a>,
-            <a href="">background-color</a>, <a href="">background-image</a>,
-            <a href="">background-origin</a>,
-            <a href="">background-position</a>,
-            <a href="">background-repeat</a>, <a href="">background-size</a>,
-            <a href="">background-attachment</a>,
-          </p>
-          <iframe
-            height="265"
-            style="width: 100%"
-            scrolling="no"
-            title="prop-background"
-            src="https://codepen.io/rikdefo/embed/oNYgMQx?height=265&theme-id=dark&default-tab=css,result"
-            frameborder="no"
-            loading="lazy"
-            allowtransparency="true"
-            allowfullscreen="true"
-          >
-            See the Pen
-            <a href="https://codepen.io/rikdefo/pen/oNYgMQx">prop-background</a>
-            by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
-            <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-          <span id=""></span>
-          <span class="code-block">
-            background: red url(image.jpg) center / 10% no-repeat fixed;
-            //красный фон с картинкой, размером 10% по центру и зафиксированной
-            при прокрутке <br />
-            bacground: red; //одно значение красного цвета<br />
-          </span>
+            <p>
+              Свойство нужно для указания цвета фона. Цвет можно указать
+              несколькими вариантами: написать название цвета на английском
+              языке; указать его hex код (<span class="code-block-inline"
+                >#ff0000</span
+              >
+              - красный цвет); rgba код (<span class="code-block-inline"
+                >rgba(255, 255, 255, .3)</span
+              >
+              - белый и прозрачный на 30%)
+            </p>
+
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-color"
+              src="https://codepen.io/rikdefo/embed/YzpyoMP?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/YzpyoMP"
+                >prop-background-color</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-image: url() (картинка фона)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background-image"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
+
+            <p>
+              Свойство используется для того, чтобы на фон поставить картинку
+              (можно поставить несколько картинок).
+            </p>
+            <p>
+              Картинка может устанавливаться та, которая находится на компьютере
+              (нужно указать путь к ней), а также ссылка на картинку в интернете
+              (нужно вставить ссылку именно картинки, а не ссылку результатов
+              поиска гугл или яндекса).
+            </p>
+            <p>
+              Обычно, для получения ссылки на саму картинку, нужно нажать на нее
+              на сайте правой кнопкой мышки и в появившемся окне найти пункт
+              <span class="warning"
+                >"Копировать адрес (URL) картинки" (в разных браузерах
+                по-разному)</span
+              >.
+            </p>
+
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-image"
+              src="https://codepen.io/rikdefo/embed/ExNPbxw?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/ExNPbxw"
+                >prop-background-image</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-origin (откуда начинается фон)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background-origin"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
+            <span class="code-block"> background-origin: border-box; </span>
+            <p>
+              Свойство нужно для указания места, откуда начинается наш фон (от
+              границы , от начала блока внитри границы, от контента)
+            </p>
+            <p>
+              <span class="warning"
+                >Это свойство не работает, если блоку задано свойство</span
+              >
+              <a href="">background-attachment</a> со значением
+              <span class="warning">fixed</span>.
+            </p>
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-origin"
+              src="https://codepen.io/rikdefo/embed/qBqbKmr?height=265&theme-id=dark&default-tab=html,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/qBqbKmr"
+                >prop-background-origin</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-position (начальная позиция картинки фона)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background-position"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
+
+            <p>
+              Позиция указывает координаты начала картинки фона по
+              <b>горизонтали</b> и <b>вертикали</b> (X - лево-право, Y -
+              верх-низ). Значения можно указывать в:
+              <b
+                >Процентах (%), пикселя(px), словами (top(верх), left(лево),
+                bottom(низ), right(право), center(центр)).</b
+              >
+            </p>
+            <p>
+              <span class="warning"
+                >В HTML отсчет координат начинается в верхней левой части
+                страницы (х = 0, у = 0)</span
+              >
+            </p>
+            <p>
+              Можно писать Одно или Два значения. Если написать Два значения, то
+              первое будет отвечать за Х (горизонтально), второе за Y
+              (вертикально). Если писать Одно значение - оно будет отвечать за
+              горизонтальное (X) положение, вертикальное положение будет равно
+              значению <b>center</b>
+            </p>
+
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-position"
+              src="https://codepen.io/rikdefo/embed/oNYLNWq?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/oNYLNWq"
+                >prop-background-position</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-repeat (повторение картинки фона)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background-repeat"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
+
+            <p>
+              Свойство нужно для того, чтобы можно было повторять картинку фона
+              по горизонтали (Х), вертикали (Y) или не повторять вообще.
+            </p>
+            <p>
+              Если написать Два значения, то первое будет отвечать за Х
+              (горизонтально), второе за Y (вертикально).
+            </p>
+
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-repeat"
+              src="https://codepen.io/rikdefo/embed/yLVJegP?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/yLVJegP"
+                >prop-background-repeat</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-size (размер картинки фона)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background-size"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
+
+            <p>
+              Свойство нужно для указания размера картинки фона. Можно
+              использовать для обозначения: проценты (%), пиксели (px), auto
+              (сохраняет пропорции и считает сам), contain (максимально
+              накрывает собой весь блок. Картинка не обрезается, а вписывается в
+              блок с сохранением пропорций.), cover (сохраняет пропорции,
+              картинка может обрезаться).
+            </p>
+
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-color"
+              src="https://codepen.io/rikdefo/embed/YzpyoMP?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/YzpyoMP"
+                >prop-background-color</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
+          <div class="property">
+            <h2 class="h-two-title h-two-top">
+              background-color (фон)
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/CSS/background"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MDN</a
+              >
+            </h2>
+
+            <p>
+              Свойство нужно для указания цвета фона. Цвет можно указать
+              несколькими вариантами: написать название цвета на английском
+              языке; указать его hex код (<span class="code-block-inline"
+                >#ff0000</span
+              >
+              - красный цвет); rgba код (<span class="code-block-inline"
+                >rgba(255, 255, 255, .3)</span
+              >
+              - белый и прозрачный на 30%)
+            </p>
+
+            <iframe
+              height="465"
+              style="width: 100%"
+              scrolling="no"
+              title="prop-background-color"
+              src="https://codepen.io/rikdefo/embed/YzpyoMP?height=265&theme-id=dark&default-tab=css,result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen
+              <a href="https://codepen.io/rikdefo/pen/YzpyoMP"
+                >prop-background-color</a
+              >
+              by Rik Defo (<a href="https://codepen.io/rikdefo">@rikdefo</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <span id=""></span>
+          </div>
         </div>
       </div>
     </main>
