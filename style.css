@@ -223,11 +223,14 @@ nav a:hover {
 }
 
 .sub-categories {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247 254 255);
     position: sticky;
     top: 64px;
     padding: 10px 0;
     margin: 20px;
+    text-align: center;
+    border-top: 1px solid #ff8303;
+    border-bottom: 1px solid #ff8303;
 }
 
 .sub-categories a {
@@ -322,7 +325,7 @@ hr {
 }
 
 .sub-categories .active {
-    color: green;
+    color: #970000;
 }
 
 .top {
